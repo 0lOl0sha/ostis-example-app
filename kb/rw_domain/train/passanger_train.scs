@@ -1,0 +1,7 @@
+passanger_train_subtype <= nrel_subdividing: 
+{ 
+        express;
+        fast;
+        standart;
+        regional
+};;

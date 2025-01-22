@@ -1,0 +1,9 @@
+cargo_train_tag <- rw_domain;;
+
+cargo_train_subtype <= nrel_subdividing: 
+{ 
+        accelerated;
+        through;
+        district;
+        collected
+};;

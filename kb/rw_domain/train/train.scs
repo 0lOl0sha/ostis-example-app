@@ -1,0 +1,13 @@
+train <- rw_domain;;
+train <- train_length;;
+train <- train_number;;
+train <- has_locomotive;;
+
+train <= nrel_subdividing: {
+    cargo_train_subtype;
+    passanger_train_subtype
+};;
+
+
+relation_type <- sc_node_norole_relation;;
+train <= relation_type: checkrelation;;

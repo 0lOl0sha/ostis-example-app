@@ -1,0 +1,2 @@
+train_to_station_leave <- rw_domain;;
+train_to_station_arrival <- rw_domain;;

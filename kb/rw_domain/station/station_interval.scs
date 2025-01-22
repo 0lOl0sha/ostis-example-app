@@ -1,0 +1,14 @@
+
+incedent_direction <= nrel_subdividing: {
+    same_direction;
+    opp_direction
+};;
+
+incedent_train_status <= nrel_subdividing: {
+    stationary;
+    moving
+};;
+
+incedent_interval <- rw_domain;;
+
+incedent_same_dir_staionary_interval -> { same_direction; stationary; here_will_be_time};;

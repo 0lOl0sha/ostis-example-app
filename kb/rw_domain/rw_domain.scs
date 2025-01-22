@@ -1,0 +1,10 @@
+rw_domain <- subject_domain;;
+
+train <- rw_domain;;
+station <- rw_domain;;
+track <- rw_domain;;
+schedule <- rw_domain;;
+
+
+train_length <- rw_domain;;
+
