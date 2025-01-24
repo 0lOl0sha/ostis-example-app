@@ -1,0 +1,10 @@
+length <- measurable_parameter; sc_node_class;;
+
+measurement_in_carriages <- sc_node_norole_relation; measurement_of_fixed_measure;;
+
+train_length_measurement_5 <- length; sc_node_class;;
+train_length_measurement_5 => measurement_in_carriages: 5;;
+
+train_1 <- train_length_measurement_5;;
+
+station_track_1 <- train_length_measurement_5;;

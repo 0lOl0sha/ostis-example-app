@@ -7,3 +7,6 @@ cargo_train_subtype <= nrel_subdividing:
         district;
         collected
 };;
+
+
+train_1 <- accelerated; long;;

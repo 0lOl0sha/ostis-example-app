@@ -1,10 +1,15 @@
 rw_domain <- subject_domain;;
 
 train <- rw_domain;;
+train <- sc_node_class;;
 station <- rw_domain;;
+station <- sc_node_class;;
 track <- rw_domain;;
+track <- sc_node_class;;
 schedule <- rw_domain;;
 
+length <- measurable_parameter;;
 
-train_length <- rw_domain;;
+
+
 

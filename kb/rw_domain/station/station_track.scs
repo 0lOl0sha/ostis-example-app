@@ -1,7 +1,5 @@
-
-station_track <- train_length;;
-station_track <- cargo_train_tag;;
-
+station_track <- sc_node_class;;
 passanger_platform <- rw_domain;;
 
 station_track_interval <- rw_domain;;
+station_track_1 <- station_track; station_1;;

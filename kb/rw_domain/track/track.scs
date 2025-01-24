@@ -2,6 +2,10 @@ track_to_train_type_time <- rw_domain;;
 
 track_to_train_type_pair_interval <- rw_domain;;
 
-track_to_train_type_time -> { train_type: cargo_long_heavy_train; here_will_be_time };;
+track_to_train_type_time -> nrel_subdividing: { train_type: cargo_long_heavy_train; track_1 };;
 
-track_to_train_type_pair_interval-> { train_type_1: cargo_long_heavy_train;  train_type_2: cargo_long_heavy_train; here_will_be_time };;
+
+
+nrel_track_to_station_enter <- sc_node_norole_relation;;
+
+

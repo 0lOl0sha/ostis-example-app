@@ -1,3 +1,7 @@
+long <- sc_node_class;;
+heavy <- sc_node_class;;
+dangerous <- sc_node_class;;
+
 cargo_train_subtype => nrel_inclusion: 
     long; 
     heavy; 
@@ -5,7 +9,8 @@ cargo_train_subtype => nrel_inclusion:
 
 cargo_long_train -> long;;
 cargo_long_heavy_train -> long; heavy;; 
-cargo_long_heavy__dangerous_train -> long; heavy; dangerous;; 
+cargo_long_dangerous_train -> long; dangerous;;
+cargo_long_heavy_dangerous_train -> long; heavy; dangerous;; 
 cargo_heavy_train -> heavy;; 
 cargo_heavy_dangerous_train -> heavy; dangerous;; 
 cargo_dangerous_train -> dangerous;;

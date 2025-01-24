@@ -1,7 +1,2 @@
-station_track <- rw_domain;;
-
 station_track <- station;;
-
-station <= track;;
-
-station_to_track_incline <- rw_domain;;
+station_1 <- station;;
