@@ -1,0 +1,26 @@
+check_train_2_check_station_1_schedule_item <- schedule_item;
+=> nrel_main_idtf: [Check Train 2 - Check Station 1 Schedule Item] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольный поезд 2 - Контрольная станция 1 пункт расписания] (* <- lang_ru;; *);;
+check_train_2_check_station_1_schedule_item => rrel_time: moment_1210_19_02_2000;;
+check_train_2_check_station_1_schedule_item => rrel_station: check_station_1;;
+
+check_train_2_check_station_2_schedule_item <- schedule_item;
+=> nrel_main_idtf: [Check Train 2 - Check Station 2 Schedule Item] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольный поезд 2 - Контрольная станция 2 пункт расписания] (* <- lang_ru;; *);;
+check_train_2_check_station_2_schedule_item => rrel_time: moment_1220_19_02_2000;;
+check_train_2_check_station_2_schedule_item => rrel_station: check_station_2;;
+
+check_train_2_check_station_3_schedule_item <- schedule_item;
+=> nrel_main_idtf: [Check Train 2 - Check Station 3 Schedule Item] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольный поезд 2 - Контрольная станция 3 пункт расписания] (* <- lang_ru;; *);;
+check_train_2_check_station_3_schedule_item => rrel_time: moment_1230_19_02_2000;;
+check_train_2_check_station_3_schedule_item => rrel_station: check_station_3;;
+
+check_train_2 => nrel_schedule: {
+    check_train_2_check_station_1_schedule_item;
+    check_train_2_check_station_2_schedule_item;
+    check_train_2_check_station_3_schedule_item
+};;
+
+check_train_2_check_station_1_schedule_item => nrel_next_station: check_train_2_check_station_2_schedule_item;;
+check_train_2_check_station_2_schedule_item => nrel_next_station: check_train_2_check_station_3_schedule_item;;

@@ -1,4 +1,4 @@
-passanger_train_subtype <= nrel_subdividing: 
+passanger_train <= nrel_subdividing: 
 { 
         express;
         fast;

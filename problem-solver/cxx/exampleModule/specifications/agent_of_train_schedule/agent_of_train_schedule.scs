@@ -1,0 +1,5 @@
+concept_agent_of_train_schedule
+    <- sc_agent;
+    => nrel_main_idtf: [Get train schedule agent] (* <- lang_en; *);
+    => nrel_main_idtf: [Агент получения расписания поезда] (* <- lang_ru; *);
+    => nrel_performs_action: action_get_train_schedule;;

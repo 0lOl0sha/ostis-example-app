@@ -1,0 +1,19 @@
+// Example schedule for interval issue detection
+
+
+nrel_next_station <- sc_node_norole_relation;
+=> nrel_main_idtf: [next station] (* <- lang_en;; *);
+=> nrel_main_idtf: [следующая станция] (* <- lang_ru;; *);;
+
+nrel_schedule <- sc_node_norole_relation;
+=> nrel_main_idtf: [schedule] (* <- lang_en;; *);
+=> nrel_main_idtf: [Расписание] (* <- lang_ru;; *);;
+
+rrel_station <- sc_node_role_relation;
+=> nrel_main_idtf: [station] (* <- lang_en;; *);
+=> nrel_main_idtf: [станция] (* <- lang_ru;; *);;
+
+
+schedule_item <- sc_node_class;
+=> nrel_main_idtf: [Schedule Item] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пункт расписания] (* <- lang_ru;; *);;

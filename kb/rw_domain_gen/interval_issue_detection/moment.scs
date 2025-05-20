@@ -1,0 +1,27 @@
+moment_1200_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 12:00] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 12:00] (* <- lang_ru;; *);;
+
+moment_1210_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 12:10] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 12:10] (* <- lang_ru;; *);;
+
+moment_1220_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 12:20] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 12:20] (* <- lang_ru;; *);;
+
+moment_1230_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 12:30] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 12:30] (* <- lang_ru;; *);;
+
+moment_1240_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 12:40] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 12:40] (* <- lang_ru;; *);;
+
+moment_1250_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 12:50] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 12:50] (* <- lang_ru;; *);;
+
+moment_1300_19_02_2000 <- moment;
+=> nrel_main_idtf: [19.02.2000 13:00] (* <- lang_en;; *);
+=> nrel_main_idtf: [19.02.2000 13:00] (* <- lang_ru;; *);;

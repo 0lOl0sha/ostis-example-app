@@ -1,0 +1,14 @@
+// Example stations for interval issue detection
+
+check_station_1 <- station;
+=> nrel_main_idtf: [Check Station 1] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольная станция 1] (* <- lang_ru;; *);;
+
+check_station_2 <- station;
+=> nrel_main_idtf: [Check Station 2] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольная станция 2] (* <- lang_ru;; *);;
+
+check_station_3 <- station;
+=> nrel_main_idtf: [Check Station 3] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольная станция 3] (* <- lang_ru;; *);;
+

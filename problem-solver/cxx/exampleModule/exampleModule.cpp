@@ -8,7 +8,9 @@
 
 #include "agents/SubdividingSearchAgent.hpp"
 #include "agents/IsomorphicSearchAgent.hpp"
+#include "agents/GetTrainScheduleAgent.hpp"
 
 SC_MODULE_REGISTER(ExampleModule)
 ->Agent<SubdividingSearchAgent>()
-->Agent<IsomorphicSearchAgent>(); 
+->Agent<IsomorphicSearchAgent>()
+->Agent<GetTrainScheduleAgent>();

@@ -1,0 +1,31 @@
+lib_component_ui_menu_train_schedule = [*
+ui_menu_train_schedule <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_train_schedule 
+=> nrel_main_idtf: 
+    [Какое расписание у указанного поезда?]
+    (* <- lang_ru;; *);
+=> nrel_idtf: 
+    [Запрос расписания поезда]
+    (* <- lang_ru;; *);;
+
+ui_menu_train_schedule 
+=> nrel_main_idtf: 
+    [What is the schedule of the specified train?]
+    (* <- lang_en;; *);
+=> nrel_idtf: 
+    [Request for train schedule]
+    (* <- lang_en;; *);;
+
+ui_menu_train_schedule => ui_nrel_command_template:
+    [*
+        action_get_train_schedule _-> ._action_get_train_schedule_instance
+            (*
+                _-> rrel_1:: ui_arg_1;;
+            *);;
+        ._action_get_train_schedule_instance <-_ action;;
+    *];;
+
+ui_menu_train_schedule => ui_nrel_command_lang_template: [Какое расписание у $ui_arg_1?] (* <- lang_ru;; *);;
+ui_menu_train_schedule => ui_nrel_command_lang_template: [What is the schedule of $ui_arg_1?] (* <- lang_en;; *);;
+*];;

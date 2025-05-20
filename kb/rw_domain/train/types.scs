@@ -1,2 +1,2 @@
-passanger_train_subtype <- rw_domain;;
-cargo_train_subtype <- rw_domain;;
+passanger_train <- rw_domain;;
+cargo_train <- rw_domain;;

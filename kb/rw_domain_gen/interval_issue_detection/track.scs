@@ -1,0 +1,53 @@
+
+
+
+
+check_track_1 => nrel_track_to_station_enter: check_station_1;;
+check_track_1 => nrel_track_to_station_enter: check_station_2;;
+check_track_2 => nrel_track_to_station_enter: check_station_2;;
+check_track_2 => nrel_track_to_station_enter: check_station_3;;
+
+
+
+
+checkNode -> nrel_track_to_train_type_time: 
+    { 
+        rrel_train_type: cargo_train;
+        rrel_track: check_track_1;
+        rrel_time: travel_time_10min 
+    };;
+
+checkNode -> nrel_track_to_train_type_time: 
+    { 
+        rrel_train_type: passanger_train;
+        rrel_track: check_track_1;
+        rrel_time: travel_time_10min 
+    };;
+
+checkNode -> nrel_track_to_train_type_time: 
+    { 
+        rrel_train_type: cargo_train;
+        rrel_track: check_track_2;
+        rrel_time: travel_time_10min 
+    };;
+    
+checkNode -> nrel_track_to_train_type_time: 
+    { 
+        rrel_train_type: passanger_train;
+        rrel_track: check_track_2;
+        rrel_time: travel_time_10min 
+    };;
+
+
+travel_time_10min <- sc_node_not_relation;
+=> nrel_main_idtf: [10 min] (* <- lang_en;; *);
+=> nrel_main_idtf: [10 мин] (* <- lang_ru;; *);;
+
+check_track_1 <- track;
+=> nrel_main_idtf: 
+    [Check Track 1] (* <- lang_en;; *);
+    [Контрольный путь 1] (* <- lang_ru;; *);;
+
+check_track_2 <- track;
+=> nrel_main_idtf: [Check Track 2] (* <- lang_en;; *);
+=> nrel_main_idtf: [Контрольный путь 2] (* <- lang_ru;; *);;

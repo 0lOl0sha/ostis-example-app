@@ -1,0 +1,11 @@
+// interval_issue_detection.scs
+// Example trains for interval issue detection
+
+cargo_train_1 <- cargo_train;
+=> nrel_main_idtf: [Cargo Train 1] (* <- lang_en;; *);
+=> nrel_main_idtf: [Грузовой поезд 1] (* <- lang_ru;; *);;
+
+passanger_train_1 <- passanger_train;
+=> nrel_main_idtf: [Passenger Train 1] (* <- lang_en;; *);
+=> nrel_main_idtf: [Пассажирский поезд 1] (* <- lang_ru;; *);;
+

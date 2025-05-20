@@ -17,4 +17,6 @@ public:
   static inline ScKeynode const action_search_isomorphic_structures{"action_search_isomorphic_structures", ScType::NodeConstClass};
   static inline ScKeynode const nrel_search_result{"nrel_search_result", ScType::NodeConstNoRole};
   static inline ScKeynode const empty_set{"empty_set", ScType::NodeConstClass};
+  static inline ScKeynode const nrel_schedule{"nrel_schedule", ScType::NodeConstNoRole};
+  static inline ScKeynode const action_get_train_schedule{"action_get_train_schedule", ScType::NodeConstClass};
 };

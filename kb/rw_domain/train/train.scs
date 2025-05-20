@@ -1,9 +1,9 @@
-cargo_train_subtype <- sc_node_class;;
-passanger_train_subtype <- sc_node_class;;
+cargo_train <- sc_node_class;;
+passanger_train <- sc_node_class;;
 
 train <= nrel_subdividing: {
-    cargo_train_subtype;
-    passanger_train_subtype
+    cargo_train;
+    passanger_train
 };;
 
 
